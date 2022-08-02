@@ -3,3 +3,8 @@
 
 
 A Demo of classroom project
+
+In to get to home page use this credentials
+
+* user: elias
+* password:123
