@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+  form.example {
+    margin-top: 30px;
+    margin-left: -390px;
+  }
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #343a40;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #4bbf73;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #4bbf73;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #343a40;
+    min-height: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+h1 { 
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #fff;
+ 
+    font-size: 100%;
+}
+.era {
+    color: #343a40;
+    width: 940px;
+    padding-top: 38px;
+    margin: auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: -30px;
+}
+h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+   padding: 8px 0;
+   margin-right: 16px;
+   color: #FFF;
+   text-decoration: none;
+   text-transform: lowercase;
+   font-size: 90%;
+   border-bottom: 2px solid transparent;
+ 
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+   border-bottom: 2px solid #e67e22;
+   
+}
+table {
+    border-collapse: separate;
+    border-spacing: 20px 70px;
+    max-width: 65%;
+    margin: auto;
+    
+  }
+   th, td {
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 0px;
+   padding: 20px;
+  }
+  .sub {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .sab {
+    font-size: 20px;
+    font-weight: 900;
+  }
+.cards {
+    /* whenever i m going never adding heights heights come the content */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 60px;
+
+}
+  .card1 {
+    background-image: url(images/airpods.jpg);
+  /* this css property make the image to fit in the box */
+   /* this cover by default it uses the top left  */
+  background-size: cover;
+  /* and this will solve everything nicely but we will use bottom here not center bcz it doen't bother us */
+  background-position: bottom;
+    min-height: 250px; 
+    width: 300px;
+}
+.card2 {
+    background-image: url(images/alexa.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px; 
+    width: 300px;
+}
+.card3 {
+    background-image: url(images/camera.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px; 
+    width: 300px;
+}
+.card1, .card2, .card3 {
+    padding: 30px 30px 20px 30px;
+    /* this relates to flexboxand this means we can padding without breaking our boxes  */
+    box-sizing: border-box;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228)
+
+}
+
+
+.navbutton {
+   color: #343a40;
+    padding: 1px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+   display: inline-block;
+   /* here i want to set the nav button to relative */
+   position: relative;
+}
+.cssd  {
+ color: #fff;
+ text-decoration: none;
+ margin-left: -15px;
+}
+.gh {
+    color: #343a40;
+    font-size: 14px;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+/* this turns the dropdown-box off when not used */
+.dropdown{
+    display: none;
+    /* the default of putting things in browser is relative and gona put absolute and this means i don't want you to be a postion of relative i want you to be a different one  which is absolute and this means also that i don't care where my bodies are i go where i m told */
+    position: absolute;
+
+    /* sometimes what can happen is this appears and home home home being underneath the content and an easy fix for that is something called the Z-index and the Z-index,think of you got X and Y on your page and Z is kinder comming towards you .you can put  */
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -39px;
+    
+}
+/* this turns the dropdown-box on during hover  */
+.navbutton:hover .dropdown{
+    display: block;
+}
+.dropdown .navbutton {
+    background-color: #fff;   
+  
+}
+.dropdown .navbutton:last-child {
+       
+    border-bottom:1px solid #343a40;
+}
+
+.dropdown .navbutton:hover {
+    background-color: rgb(216, 29, 204);
+    transition-duration: 100ms;
+}
+.login {
+    margin: auto;
+    width: 938px;
+    margin-top: 60px;
+}
+.apx {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 360px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #e8f0fe;
+    border: none;
+}
+.signin {
+    padding: 15px 19px 15px 19px;
+    background: #1a1a1a;
+    color: #fff;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+.login a {
+ text-decoration: none;
+ color: #343a40;
+ font-size: 16px;
+}
+.login p {
+    font-size: 15px;
+}
+.apy {
+    font-size: 15px;
+}
+.error1 {
+    background: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn-light {
+    color: #1a1a1a;
+    background-color: #fff;
+    border-color: #fff;
+}
+.my-3 {
+    margin-bottom: 1rem!important;
+}
+.my-3 {
+    margin-top: 1rem!important;
+}
+.btn {
+    font-size: .765625rem;
+    text-transform: uppercase;
+}
+.btn {
+    font-size: .765625rem;
+    text-transform: uppercase;
+}
